@@ -1,0 +1,47 @@
+
+program teclado;
+uses crt;
+var tecla:char;
+
+begin
+clrscr;
+writeln('Pressione ESC para Sair');
+     while tecla<>#27 do
+     begin
+          tecla:=readkey;
+          if tecla='a' then
+          begin
+               sound(500);
+               delay(100);
+               nosound;
+          end;
+          if tecla='s' then
+          begin
+               sound(600);
+               delay(100);
+               nosound;
+          end;
+          if tecla='d' then
+          begin
+               sound(700);
+               delay(100);
+               nosound;
+          end;
+          if tecla='f' then
+          begin
+          sound(800);
+          delay(100);
+          nosound;
+          end;
+          if tecla='g' then
+          begin
+          sound(850);
+          delay(100);
+          nosound;
+          end;
+     end;
+nosound;
+
+end.
+
+
